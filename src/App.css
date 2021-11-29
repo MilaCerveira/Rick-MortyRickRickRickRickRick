@@ -1,12 +1,22 @@
 body{
  color:aliceblue;
-   background: #000;  overflow: hidden;
+background: #000; 
  margin: 0px;
+ margin-top: 2rem;
+ margin-bottom: 2rem;
    padding: 0px;
    display: flex;
    justify-content: center; align-items: center;
    background: #031321;
    font-family: consolas;
+}
+.rick{
+  margin:0;
+  top: 0;
+  left: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 button {
   margin-right: 5px;
