@@ -16,26 +16,26 @@ const RickMortyBox = () => {
     }, [selectedCharacterId]);
 
     const getCharacter = async () => {
-        try{
-        const response = await fetch(`https://rickandmortyapi.com/api/character/${selectedCharacterId}`)
-        const data = await response.json();
-        await setCharacter(data);
-        await setLoaded(true);
-    }
-    catch(error){
-        console.log(error)
-    }
+        try {
+            const response = await fetch(`https://rickandmortyapi.com/api/character/${selectedCharacterId}`)
+            const data = await response.json();
+            await setCharacter(data);
+            await setLoaded(true);
+        }
+        catch (error) {
+            console.log(error)
+        }
     };
 
     const incrementSelectedCharacterId = () => {
-        if (selectedCharacterId >= 90){
+        if (selectedCharacterId >= 826) {
             return;
         }
         setSelectedCharacterId(selectedCharacterId + 1);
     };
 
     const decrementSelectedCharacterId = () => {
-        if (selectedCharacterId <= 1){
+        if (selectedCharacterId <= 1) {
             return;
         }
         setSelectedCharacterId(selectedCharacterId - 1);
@@ -43,11 +43,11 @@ const RickMortyBox = () => {
 
     return (
         <>
-      
 
-<RickMortySelector onSelectedCharacterIncrement = {incrementSelectedCharacterId} onSelectedCharacterDecrement = {decrementSelectedCharacterId}/>
-<RickMortyDetails character={character} loaded={loaded}/>
-</>
+
+            <RickMortySelector onSelectedCharacterIncrement={incrementSelectedCharacterId} onSelectedCharacterDecrement={decrementSelectedCharacterId} />
+            <RickMortyDetails character={character} loaded={loaded} />
+        </>
     )
 }
 
