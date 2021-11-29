@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import PokeDetails from "../components/PokeDetails";
 
 const PokeBox = () => {
     const [poke, setPoke] = useState({});
@@ -26,7 +27,10 @@ const PokeBox = () => {
     };
 
     return (
+        <>
 <h1> Pokemon </h1>
+<PokeDetails poke={poke} loaded={loaded}/>
+</>
     )
 }
 
