@@ -1,10 +1,10 @@
 import './App.css';
-import PokeBox from './containers/PokeBox';
+import RickMortyBox from './containers/RickMortyBox';
 
 function App() {
   return (
     <>
-    <PokeBox/>
+    <RickMortyBox/>
     </>
   );
 }
