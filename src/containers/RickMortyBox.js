@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import RickMortyDetails from "../components/RickMortyDetails";
 import RickMortySelector from "../components/RickMortySelector";
 

@@ -1,9 +1,9 @@
-const RickMortySelector = ({onSelectedCharacterIncrement, onSelectedCharacterDecrement}) => {
-    return(
-<>
-<button onClick={onSelectedCharacterDecrement}>Previous Character</button>
-<button onClick={onSelectedCharacterIncrement}>Next Character</button>
-</>
+const RickMortySelector = ({ onSelectedCharacterIncrement, onSelectedCharacterDecrement }) => {
+    return (
+        <>
+            <button onClick={onSelectedCharacterDecrement}>Previous Character</button>
+            <button onClick={onSelectedCharacterIncrement}>Next Character</button>
+        </>
     )
 }
 

@@ -4,7 +4,7 @@ import RickMortyBox from './containers/RickMortyBox';
 function App() {
   return (
     <>
-    <RickMortyBox/>
+      <RickMortyBox />
     </>
   );
 }

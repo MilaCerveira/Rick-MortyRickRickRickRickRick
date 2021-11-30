@@ -45,3 +45,40 @@ button:hover {
   border-color: #fff;
 }
 
+.pickle{
+  animation-iteration-count: infinite;  
+  position: relative;
+  height: 50px;
+  top: 30px;
+  left: 200px;
+  animation: pickle 3s infinite linear;
+}
+.ric{
+  position: relative;
+  height: 50px;
+  top: 30px;
+  right: 40px;
+  cursor: pointer;
+}
+.animate{
+  position: relative;
+  height: 50px;
+  top: 30px;
+  right: 40px;
+  cursor: pointer;
+  animation: jump 750ms linear;
+}
+
+@keyframes jump{
+  0%{top: 1px;}
+  30%{top: -50px;}
+  70%{top: -50px;}
+  100%{top: 1px;}
+}
+
+
+@keyframes pickle{
+  0%{left: 700px}
+  100%{left: -20px}
+}
+
