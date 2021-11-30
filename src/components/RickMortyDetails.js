@@ -1,5 +1,6 @@
 import { useState } from "react";
 import RM from './RM.mp3';
+import tomjones from './tomjones.mp3';
 import r from './r.png';
 import pr from './pr.png';
 import rick from './rick.png';
@@ -23,11 +24,17 @@ const RickMortyDetails = ({ character, loaded }) => {
         rick.play();
         
     };
+
+    const playTomJones = () => {
+        const tj = new Audio(tomjones);
+        tj.play();
+        
+    };
     
     return (
         <>
             <img className='rick' width="200" height="100" src={r} onClick={play} alt="title" />
-            <img className='pickle' width="50" height="50" src={pr}  alt="pickle" />
+            <img className='pickle' width="50" height="50" src={pr}  alt="pickle" onClick={playTomJones}/>
             <img className={isActive ? "ric" : "animate"}onClick={ToggleClass}  width="50" height="50" src={rick}  alt="rick" />
             <h3>Character Name: {character.name}</h3>
             <h4> Status: {character.status}</h4>
